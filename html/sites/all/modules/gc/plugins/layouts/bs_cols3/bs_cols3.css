@@ -1,0 +1,12 @@
+
+.page-admin .panel-bs-cols3 { margin-top: 0; padding-top: 0; }
+
+.page-admin .panel-bs-cols3 .panel-row-top, 
+.page-admin .panel-bs-cols3 .panel-row-middle, 
+.page-admin .panel-bs-cols3 .panel-row-bottom { width: 99%; clear: both; }
+
+.page-admin .panel-bs-cols3 .center-wrapper .panel-col-left,
+.page-admin .panel-bs-cols3 .center-wrapper .panel-col-middle,
+.page-admin .panel-bs-cols3 .center-wrapper .panel-col-right { float: left; width: 33%; }
+
+.page-admin .panel-bs-cols3 .inside { margin: 0 .5em 1em 0; }

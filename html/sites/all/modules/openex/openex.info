@@ -1,0 +1,7 @@
+name = Openex
+description = Creates an openex block
+core = 7.x
+dependencies[] = block
+package = Custom
+
+

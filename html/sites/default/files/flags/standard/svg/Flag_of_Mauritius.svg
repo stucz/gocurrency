@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 6 4"
+   width="256"
+   height="256"
+   id="svg2468"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Mauritius.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata2481">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2479">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="900 : 300 : 1"
+       inkscape:persp3d-origin="450 : 200 : 1"
+       id="perspective2483" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="776"
+     inkscape:window-width="873"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.62111111"
+     inkscape:cx="450"
+     inkscape:cy="300"
+     inkscape:window-x="11"
+     inkscape:window-y="148"
+     inkscape:current-layer="svg2468" />
+  <rect
+     width="6"
+     height="1"
+     id="rect2470"
+     x="0"
+     y="0"
+     style="fill:#dc181e" />
+  <rect
+     y="1"
+     width="6"
+     height="1"
+     id="rect2472"
+     x="0"
+     style="fill:#012a87" />
+  <rect
+     y="2"
+     width="6"
+     height="1"
+     id="rect2474"
+     x="0"
+     style="fill:#fceb0f" />
+  <rect
+     y="3"
+     width="6"
+     height="1"
+     id="rect2476"
+     x="0"
+     style="fill:#169253" />
+</svg>

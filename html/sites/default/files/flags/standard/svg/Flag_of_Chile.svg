@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   id="Flag of Chile"
+   version="1.0"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Chile.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata2427">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2425">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 500 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1500 : 500 : 1"
+       inkscape:persp3d-origin="750 : 333.33333 : 1"
+       id="perspective2429" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="694"
+     inkscape:window-width="836"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.37266667"
+     inkscape:cx="750"
+     inkscape:cy="500"
+     inkscape:window-x="37"
+     inkscape:window-y="111"
+     inkscape:current-layer="Flag of Chile" />
+  <rect
+     width="256"
+     height="170.66667"
+     id="rect2410"
+     x="0"
+     y="42.33329"
+     style="fill:#ffffff" />
+  <rect
+     width="85.333336"
+     height="170.66667"
+     id="rect2412"
+     x="0"
+     y="42.33329"
+     style="fill:#0035ad" />
+  <rect
+     width="256"
+     height="85.333336"
+     y="127.66666"
+     id="rect2414"
+     x="0"
+     style="fill:#d42e12" />
+  <g
+     id="star"
+     transform="matrix(21.333333,0,0,21.333333,42.666667,84.999977)"
+     style="fill:#ffffff">
+    <g
+       id="cone">
+      <polygon
+         id="triangle"
+         points="0,0 0,1 0.5,1 0,0 "
+         transform="matrix(0.9510565,0.309017,-0.309017,0.9510565,0,-1)" />
+      <use
+         xlink:href="#triangle"
+         transform="scale(-1,1)"
+         id="use12"
+         x="0"
+         y="0"
+         width="1500"
+         height="1000" />
+    </g>
+    <use
+       xlink:href="#cone"
+       transform="matrix(0.309017,0.9510565,-0.9510565,0.309017,0,0)"
+       id="use14"
+       x="0"
+       y="0"
+       width="1500"
+       height="1000" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(0.309017,-0.9510565,0.9510565,0.309017,0,0)"
+       id="use16"
+       x="0"
+       y="0"
+       width="1500"
+       height="1000" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(-0.809017,0.5877853,-0.5877853,-0.809017,0,0)"
+       id="use18"
+       x="0"
+       y="0"
+       width="1500"
+       height="1000" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(-0.809017,-0.5877853,0.5877853,-0.809017,0,0)"
+       id="use20"
+       x="0"
+       y="0"
+       width="1500"
+       height="1000" />
+  </g>
+</svg>

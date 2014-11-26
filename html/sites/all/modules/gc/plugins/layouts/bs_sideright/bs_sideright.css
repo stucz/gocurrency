@@ -1,0 +1,14 @@
+
+.page-admin .panel-bs-sideright { margin-top: 0; padding-top: 0; }
+
+.page-admin .panel-bs-sideright .panel-row-top, 
+.page-admin .panel-bs-sideright .panel-row-middle, 
+.page-admin .panel-bs-sideright .panel-row-bottom { width: 98%; clear: both; }
+
+.page-admin .panel-bs-sideright .panel-row-wrapper .panel-row-left,
+.page-admin .panel-bs-sideright .panel-row-wrapper .panel-row-right { float: left; width: 49%; }
+
+.page-admin .panel-bs-sideright .inside { margin: 0 .5em 1em 0; }
+
+.page-admin .panel-bs-sideright .panel-col-left { float: left; width: 80%; }
+.page-admin .panel-bs-sideright .panel-col-right { float: left; width: 19%; }

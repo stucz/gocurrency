@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 3 2"
+   id="svg4517"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Italy.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata4528">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4526">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 500 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1500 : 500 : 1"
+       inkscape:persp3d-origin="750 : 333.33333 : 1"
+       id="perspective4530" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="674"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.37266667"
+     inkscape:cx="750"
+     inkscape:cy="500"
+     inkscape:window-x="6"
+     inkscape:window-y="184"
+     inkscape:current-layer="svg4517" />
+  <rect
+     width="1"
+     height="2"
+     id="rect4519"
+     x="0"
+     y="0"
+     style="fill:#009246" />
+  <rect
+     width="1"
+     height="2"
+     x="1"
+     id="rect4521"
+     y="0"
+     style="fill:#ffffff" />
+  <rect
+     width="1"
+     height="2"
+     x="2"
+     id="rect4523"
+     y="0"
+     style="fill:#ce2b37" />
+</svg>

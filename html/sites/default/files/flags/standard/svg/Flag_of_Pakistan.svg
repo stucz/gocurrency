@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="-75 -40 120 80"
+   id="svg2689"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Pakistan.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata2717">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2715">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="900 : 300 : 1"
+       inkscape:persp3d-origin="450 : 200 : 1"
+       id="perspective2719" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="705"
+     inkscape:window-width="928"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.62111111"
+     inkscape:cx="450"
+     inkscape:cy="300"
+     inkscape:window-x="342"
+     inkscape:window-y="296"
+     inkscape:current-layer="svg2689" />
+  <rect
+     x="-75"
+     y="-40"
+     width="120"
+     height="80"
+     id="rect2691"
+     style="fill:#ffffff" />
+  <rect
+     x="-45"
+     y="-40"
+     width="90"
+     height="80"
+     id="rect2693"
+     style="fill:#006600" />
+  <circle
+     r="24"
+     id="circle2695"
+     cx="0"
+     cy="0"
+     sodipodi:cx="0"
+     sodipodi:cy="0"
+     sodipodi:rx="24"
+     sodipodi:ry="24"
+     style="fill:#ffffff" />
+  <circle
+     r="22"
+     cx="-7"
+     cy="-40"
+     transform="matrix(0.7474093,-0.6643638,0.6643638,0.7474093,37.941134,19.792745)"
+     id="circle2697"
+     sodipodi:cx="-7"
+     sodipodi:cy="-40"
+     sodipodi:rx="22"
+     sodipodi:ry="22"
+     style="fill:#006600" />
+  <comment
+     id="comment2699">rotation angles = -arctan(8/9)</comment>
+  <g
+     id="star"
+     transform="matrix(0.7474093,-0.6643638,0.6643638,0.7474093,11.958549,-10.629821)"
+     style="fill:#ffffff">
+    <g
+       id="cone">
+      <polygon
+         id="triangle"
+         points="0,0 -8,0 -8,4 0,0 "
+         transform="matrix(0.9510565,0.309017,-0.309017,0.9510565,8,0)" />
+      <use
+         xlink:href="#triangle"
+         transform="scale(1,-1)"
+         id="use2704"
+         x="0"
+         y="0"
+         width="120"
+         height="80" />
+    </g>
+    <use
+       xlink:href="#cone"
+       transform="matrix(0.309017,0.9510565,-0.9510565,0.309017,0,0)"
+       id="use2706"
+       x="0"
+       y="0"
+       width="120"
+       height="80" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(0.309017,-0.9510565,0.9510565,0.309017,0,0)"
+       id="use2708"
+       x="0"
+       y="0"
+       width="120"
+       height="80" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(-0.809017,0.5877853,-0.5877853,-0.809017,0,0)"
+       id="use2710"
+       x="0"
+       y="0"
+       width="120"
+       height="80" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(-0.809017,-0.5877853,0.5877853,-0.809017,0,0)"
+       id="use2712"
+       x="0"
+       y="0"
+       width="120"
+       height="80" />
+  </g>
+</svg>

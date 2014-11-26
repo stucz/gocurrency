@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg:svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   x="0.0000000"
+   y="0.0000000"
+   width="256"
+   height="256"
+   id="svg1"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Saint_Lucia.svg"
+   sodipodi:docbase="C:\Documents and Settings\Ruben\Bureaublad"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <sodipodi:namedview
+     inkscape:window-height="712"
+     inkscape:window-width="1024"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     inkscape:zoom="1.1083333"
+     inkscape:cx="299.99992"
+     inkscape:cy="150.00028"
+     inkscape:window-x="0"
+     inkscape:window-y="108"
+     inkscape:current-layer="svg1"
+     showgrid="false" />
+  <svg:defs
+     id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 150 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="600 : 150 : 1"
+       inkscape:persp3d-origin="300 : 100 : 1"
+       id="perspective3917" />
+  </svg:defs>
+  <svg:metadata
+     id="metadata4">
+    <RDF
+       id="RDF5">
+      <Work
+         about=""
+         id="Work6">
+        <format
+           id="format7">image/svg+xml</format>
+        <type
+           id="type9"
+           resource="http://purl.org/dc/dcmitype/StillImage" />
+      </Work>
+    </RDF>
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </svg:metadata>
+  <svg:rect
+     width="256"
+     height="128"
+     x="-7.5000004e-05"
+     y="64"
+     style="fill:#0b51a1;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="rect908" />
+  <svg:path
+     d="M 85.333258,180.73778 L 170.66659,180.73778 L 127.99993,75.26222 L 85.333258,180.73778 z"
+     style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="path1530" />
+  <svg:path
+     d="M 91.084369,180.73778 L 164.91548,180.73778 L 127.99993,89.48445 L 91.084369,180.73778 z"
+     style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="path2152" />
+  <svg:path
+     d="M 85.33326,180.95112 L 170.66659,180.95112 L 127.99993,128.22223 L 85.33326,180.95112 z"
+     style="fill:#fcd116;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     id="path2774" />
+</svg:svg>

@@ -1,0 +1,6 @@
+name = Current Currency Data
+description = Displays current currency data in a table format
+core = 7.x
+files[] = chc.module
+package = Custom
+

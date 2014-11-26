@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   id="svg2761"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_the_United_States.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata2831">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="700"
+     inkscape:window-width="937"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.45263158"
+     inkscape:cx="617.5"
+     inkscape:cy="325"
+     inkscape:window-x="61"
+     inkscape:window-y="89"
+     inkscape:current-layer="svg2761" />
+  <defs
+     id="defs2763">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 325 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1235 : 325 : 1"
+       inkscape:persp3d-origin="617.5 : 216.66667 : 1"
+       id="perspective2833" />
+    <polygon
+       id="pt"
+       points="-0.16245985,0 0,-0.5 0.16245985,0 -0.16245985,0 "
+       transform="scale(6.16e-2,6.16e-2)"
+       style="fill:#ffffff" />
+    <g
+       id="star">
+      <use
+         xlink:href="#pt"
+         transform="matrix(-0.809017,-0.5877853,0.5877853,-0.809017,0,0)"
+         id="use2767"
+         x="0"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#pt"
+         transform="matrix(0.309017,-0.9510565,0.9510565,0.309017,0,0)"
+         id="use2769"
+         x="0"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#pt"
+         id="use2771"
+         x="0"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#pt"
+         transform="matrix(0.309017,0.9510565,-0.9510565,0.309017,0,0)"
+         id="use2773"
+         x="0"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#pt"
+         transform="matrix(-0.809017,0.5877853,-0.5877853,-0.809017,0,0)"
+         id="use2775"
+         x="0"
+         y="0"
+         width="1235"
+         height="650" />
+    </g>
+    <g
+       id="s5">
+      <use
+         xlink:href="#star"
+         x="-0.252"
+         id="use2778"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#star"
+         x="-0.126"
+         id="use2780"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#star"
+         id="use2782"
+         x="0"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#star"
+         x="0.126"
+         id="use2784"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#star"
+         x="0.252"
+         id="use2786"
+         y="0"
+         width="1235"
+         height="650" />
+    </g>
+    <g
+       id="s6">
+      <use
+         xlink:href="#s5"
+         x="-0.063000001"
+         id="use2789"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#star"
+         x="0.315"
+         id="use2791"
+         y="0"
+         width="1235"
+         height="650" />
+    </g>
+    <g
+       id="x4">
+      <use
+         xlink:href="#s6"
+         id="use2794"
+         x="0"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#s5"
+         y="0.054000001"
+         id="use2796"
+         x="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#s6"
+         y="0.108"
+         id="use2798"
+         x="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#s5"
+         y="0.162"
+         id="use2800"
+         x="0"
+         width="1235"
+         height="650" />
+    </g>
+    <g
+       id="u">
+      <use
+         xlink:href="#x4"
+         y="-0.21600001"
+         id="use2803"
+         x="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#x4"
+         id="use2805"
+         x="0"
+         y="0"
+         width="1235"
+         height="650" />
+      <use
+         xlink:href="#s6"
+         y="0.21600001"
+         id="use2807"
+         x="0"
+         width="1235"
+         height="650" />
+    </g>
+    <rect
+       id="stripe"
+       width="1235"
+       height="50"
+       x="0"
+       y="0"
+       style="fill:#bb133e" />
+  </defs>
+  <rect
+     width="256"
+     height="134.73697"
+     id="rect2810"
+     x="0"
+     y="60.263023"
+     style="fill:#ffffff" />
+  <use
+     xlink:href="#stripe"
+     id="use2812"
+     x="0"
+     y="0"
+     width="1235"
+     height="650"
+     transform="matrix(0.2072874,0,0,0.2072876,0,60.263)" />
+  <use
+     xlink:href="#stripe"
+     y="100"
+     id="use2814"
+     x="0"
+     width="1235"
+     height="650"
+     transform="matrix(0.2072874,0,0,0.2072876,0,60.263)" />
+  <use
+     xlink:href="#stripe"
+     y="200"
+     id="use2816"
+     x="0"
+     width="1235"
+     height="650"
+     transform="matrix(0.2072874,0,0,0.2072876,0,60.263)" />
+  <use
+     xlink:href="#stripe"
+     y="300"
+     id="use2818"
+     x="0"
+     width="1235"
+     height="650"
+     transform="matrix(0.2072874,0,0,0.2072876,0,60.263)" />
+  <use
+     xlink:href="#stripe"
+     y="400"
+     id="use2820"
+     x="0"
+     width="1235"
+     height="650"
+     transform="matrix(0.2072874,0,0,0.2072876,0,60.263)" />
+  <use
+     xlink:href="#stripe"
+     y="500"
+     id="use2822"
+     x="0"
+     width="1235"
+     height="650"
+     transform="matrix(0.2072874,0,0,0.2072876,0,60.263)" />
+  <use
+     xlink:href="#stripe"
+     y="600"
+     id="use2824"
+     x="0"
+     width="1235"
+     height="650"
+     transform="matrix(0.2072874,0,0,0.2072876,0,60.263)" />
+  <rect
+     width="102.4"
+     height="72.550674"
+     id="rect2826"
+     x="0"
+     y="60.263023"
+     style="fill:#002664" />
+  <use
+     xlink:href="#u"
+     transform="matrix(134.73684,0,0,134.73697,51.2,96.538335)"
+     id="use2828"
+     x="0"
+     y="0"
+     width="1235"
+     height="650" />
+</svg>

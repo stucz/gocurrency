@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="256"
+   height="256"
+   id="svg3846"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_the_Comoros.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata3863">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3861">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 150 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="500 : 150 : 1"
+       inkscape:persp3d-origin="250 : 100 : 1"
+       id="perspective3865" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="758"
+     inkscape:window-width="878"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="1.118"
+     inkscape:cx="250"
+     inkscape:cy="150"
+     inkscape:window-x="0"
+     inkscape:window-y="189"
+     inkscape:current-layer="svg3846" />
+  <rect
+     width="256"
+     height="153.60001"
+     style="fill:#ffc61e"
+     id="rect3848"
+     x="0"
+     y="51.399986" />
+  <rect
+     width="256"
+     height="115.2"
+     y="89.799995"
+     id="rect2304"
+     style="fill:#ffffff"
+     x="0" />
+  <rect
+     width="256"
+     height="76.800003"
+     y="128.19998"
+     id="rect2926"
+     style="fill:#ce1126"
+     x="0" />
+  <rect
+     width="256"
+     height="38.400002"
+     y="166.60001"
+     id="rect3548"
+     style="fill:#3a75c4"
+     x="0" />
+  <path
+     d="M 0,204.99999 L 128,128.19999 L 0,51.399992 L 0,204.99999 L 0,204.99999 z"
+     id="path4170"
+     style="fill:#3d8e33" />
+  <path
+     d="M 78.080005,128.19998 C 78.080005,147.28695 62.606966,162.75998 43.520002,162.75998 C 24.433037,162.75998 8.9599964,147.28695 8.9599964,128.19998 C 8.9599964,109.11302 24.433037,93.639982 43.520002,93.639982 C 62.606966,93.639982 78.080005,109.11302 78.080005,128.19998 z"
+     id="path5413"
+     style="fill:#ffffff" />
+  <path
+     d="M 93.44,128.19999 C 93.44,147.28695 77.966966,162.75998 58.88,162.75998 C 39.793037,162.75998 24.319996,147.28695 24.319996,128.19998 C 24.319996,109.11302 39.793037,93.639982 58.88,93.639982 C 77.966966,93.639982 93.440005,109.11302 93.440005,128.19998 L 93.440051,128.19998 L 93.440051,128.19999 L 93.44,128.19999 z"
+     id="path5414"
+     style="fill:#3d8e33" />
+  <use
+     transform="translate(0,49.472)"
+     id="use2407"
+     xlink:href="#path6092"
+     x="0"
+     y="0"
+     width="500"
+     height="300" />
+  <path
+     d="M 45.113569,101.48639 L 49.763599,101.48639 L 51.199995,97.063992 L 52.63639,101.48639 L 57.286426,101.48639 L 53.525012,104.21919 L 54.961413,108.64159 L 51.199995,105.90878 L 47.438587,108.64159 L 48.874982,104.21919 L 45.113569,101.48639 z"
+     id="path6092"
+     style="fill:#ffffff" />
+  <use
+     transform="translate(0,16.490652)"
+     id="use2403"
+     xlink:href="#path6092"
+     x="0"
+     y="0"
+     width="500"
+     height="300" />
+  <use
+     transform="translate(0,32.981302)"
+     id="use2405"
+     xlink:href="#path6092"
+     x="0"
+     y="0"
+     width="500"
+     height="300" />
+</svg>

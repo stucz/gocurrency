@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 20 10"
+   id="svg2614"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Cuba.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata2646">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2644">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 200 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="800 : 200 : 1"
+       inkscape:persp3d-origin="400 : 133.33333 : 1"
+       id="perspective2648" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="674"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.69875"
+     inkscape:cx="400"
+     inkscape:cy="200"
+     inkscape:window-x="89"
+     inkscape:window-y="47"
+     inkscape:current-layer="svg2614" />
+  <clipPath
+     id="a">
+    <rect
+       width="20"
+       height="10"
+       id="rect2617"
+       x="0"
+       y="0" />
+  </clipPath>
+  <g
+     clip-path="url(#a)"
+     id="g2619">
+    <rect
+       width="20"
+       height="10"
+       id="blue_stripes"
+       x="0"
+       y="0"
+       style="fill:#002a8f" />
+    <path
+       d="M 0,3 L 20,3 M 0,7 L 20,7"
+       id="white_stripes"
+       style="stroke:#ffffff;stroke-width:2" />
+    <g
+       id="red_triangle"
+       style="fill:#cf142b">
+      <path
+         d="M 0,0 L 10,0 L 0,7"
+         transform="matrix(0.8660254,0.5,-0.5,0.8660254,0,0)"
+         id="path2624" />
+      <path
+         d="M 0,10 L 10,10 L 0,4"
+         transform="matrix(0.8660254,-0.5,0.5,0.8660254,-5,1.339746)"
+         id="path2626" />
+    </g>
+    <comment
+       id="comment2628">the star is in the center of gravity of the triangle, so the x-pos is irrational (5 / sin30 * sin60)</comment>
+    <g
+       id="star"
+       transform="matrix(1.5,0,0,1.5,2.8867513,5)"
+       style="fill:#ffffff">
+      <g
+         id="cone">
+        <polygon
+           id="triangle"
+           points="0,0 0,1 0.5,1 0,0 "
+           transform="matrix(0.9510565,0.309017,-0.309017,0.9510565,0,-1)" />
+        <use
+           xlink:href="#triangle"
+           transform="scale(-1,1)"
+           id="use2633"
+           x="0"
+           y="0"
+           width="20"
+           height="10" />
+      </g>
+      <use
+         xlink:href="#cone"
+         transform="matrix(0.309017,0.9510565,-0.9510565,0.309017,0,0)"
+         id="use2635"
+         x="0"
+         y="0"
+         width="20"
+         height="10" />
+      <use
+         xlink:href="#cone"
+         transform="matrix(0.309017,-0.9510565,0.9510565,0.309017,0,0)"
+         id="use2637"
+         x="0"
+         y="0"
+         width="20"
+         height="10" />
+      <use
+         xlink:href="#cone"
+         transform="matrix(-0.809017,0.5877853,-0.5877853,-0.809017,0,0)"
+         id="use2639"
+         x="0"
+         y="0"
+         width="20"
+         height="10" />
+      <use
+         xlink:href="#cone"
+         transform="matrix(-0.809017,-0.5877853,0.5877853,-0.809017,0,0)"
+         id="use2641"
+         x="0"
+         y="0"
+         width="20"
+         height="10" />
+    </g>
+  </g>
+</svg>

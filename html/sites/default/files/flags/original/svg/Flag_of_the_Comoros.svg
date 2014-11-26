@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="500"
+   height="300">
+  <rect
+     width="500"
+     height="300"
+     style="fill:#ffc61e"/>
+  <rect
+     width="500"
+     height="225"
+     y="75"
+     id="rect2304"
+     style="fill:#ffffff"/>
+  <rect
+     width="500"
+     height="150"
+     y="150"
+     id="rect2926"
+     style="fill:#ce1126"/>
+  <rect
+     width="500"
+     height="75"
+     y="225"
+     id="rect3548"
+     style="fill:#3a75c4"/>
+  <path
+     d="M 0,300 L 250,150 L 0,0 L 0,300 L 0,300 z"
+     id="path4170"
+     style="fill:#3d8e33"/>
+  <path
+     d="M 152.50001,149.99998 C 152.50001,187.27921 122.27923,217.49999 85.000003,217.49999 C 47.720776,217.49999 17.499993,187.27921 17.499993,149.99998 C 17.499993,112.72076 47.720776,82.499975 85.000003,82.499975 C 122.27923,82.499975 152.50001,112.72076 152.50001,149.99998 z"
+     id="path5413"
+     style="fill:#ffffff"/>
+  <path
+     d="M 182.5,150 C 182.5,187.27921 152.27923,217.49999 115,217.49999 C 77.720776,217.49999 47.499993,187.27921 47.499993,149.99998 C 47.499993,112.72076 77.720776,82.499975 115,82.499975 C 152.27923,82.499975 182.50001,112.72076 182.50001,149.99998 L 182.5001,149.99998 L 182.5001,150 L 182.5,150 z"
+     id="path5414"
+     style="fill:#3d8e33"/>
+  <use
+     transform="translate(0,96.625)"
+     id="use2407"
+     xlink:href="#path6092"/>
+  <path
+     d="M 88.11244,97.825 L 97.19453,97.825 L 99.99999,89.1875 L 102.80545,97.825 L 111.88755,97.825 L 104.54104,103.1625 L 107.34651,111.8 L 99.99999,106.46249 L 92.65349,111.8 L 95.45895,103.1625 L 88.11244,97.825 z"
+     id="path6092"
+     style="fill:#ffffff"/>
+  <use
+     transform="translate(0,32.2083)"
+     id="use2403"
+     xlink:href="#path6092"/>
+  <use
+     transform="translate(0,64.4166)"
+     id="use2405"
+     xlink:href="#path6092"/>
+</svg>

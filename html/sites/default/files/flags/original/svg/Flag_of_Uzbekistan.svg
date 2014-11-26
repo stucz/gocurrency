@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.1"
+   width="500"
+   height="250"
+   viewBox="0 0 250 125"
+   id="svg2">
+  <defs
+     id="defs9">
+    <g
+       id="star"
+       style="fill:#ffffff">
+      <g
+         id="cone">
+        <polygon
+           points="0,0 0,1 0.5,1 "
+           transform="matrix(0.95105652,0.30901699,-0.30901699,0.95105652,0,-1)"
+           id="triangle" />
+        <use
+           transform="scale(-1,1)"
+           id="use14"
+           x="0"
+           y="0"
+           width="500"
+           height="250"
+           xlink:href="#triangle" />
+      </g>
+      <use
+         transform="matrix(0.30901699,0.95105652,-0.95105652,0.30901699,0,0)"
+         id="use16"
+         x="0"
+         y="0"
+         width="500"
+         height="250"
+         xlink:href="#cone" />
+      <use
+         transform="matrix(0.30901699,-0.95105652,0.95105652,0.30901699,0,0)"
+         id="use18"
+         x="0"
+         y="0"
+         width="500"
+         height="250"
+         xlink:href="#cone" />
+      <use
+         transform="matrix(-0.80901699,0.58778525,-0.58778525,-0.80901699,0,0)"
+         id="use20"
+         x="0"
+         y="0"
+         width="500"
+         height="250"
+         xlink:href="#cone" />
+      <use
+         transform="matrix(-0.80901699,-0.58778525,0.58778525,-0.80901699,0,0)"
+         id="use22"
+         x="0"
+         y="0"
+         width="500"
+         height="250"
+         xlink:href="#cone" />
+    </g>
+  </defs>
+  <rect
+     width="250"
+     height="40"
+     x="0"
+     y="0"
+     id="blue_stripe"
+     style="fill:#0099b5" />
+  <rect
+     width="250"
+     height="45"
+     x="0"
+     y="40"
+     id="lower_red_stripe"
+     style="fill:#ce1126" />
+  <rect
+     width="250"
+     height="40"
+     x="0"
+     y="42.5"
+     id="white_stripe"
+     style="fill:#ffffff" />
+  <rect
+     width="250"
+     height="40"
+     x="0"
+     y="85"
+     id="green_stripe"
+     style="fill:#1eb53a" />
+  <circle
+     cx="70"
+     cy="40"
+     r="30"
+     transform="scale(0.5,0.5)"
+     id="circle24"
+     style="fill:#ffffff" />
+  <circle
+     cx="83.5"
+     cy="40"
+     r="25"
+     transform="matrix(0.6,0,0,0.6,-10.1,-4)"
+     id="circle26"
+     style="fill:#0099b5" />
+  <use
+     transform="matrix(3.1543867,0,0,3.3167184,44,32.316719)"
+     id="use42"
+     x="0"
+     y="0"
+     width="500"
+     height="250"
+     xlink:href="#star" />
+  <use
+     transform="translate(12,-4.3333003e-7)"
+     id="use2922"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(24,-4.3333003e-7)"
+     id="use2924"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(36,-4.3333003e-7)"
+     id="use2926"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(48,-4.3333003e-7)"
+     id="use2928"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(12,-12)"
+     id="use2930"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(24,-12)"
+     id="use2932"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(36,-12)"
+     id="use2934"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(48,-12)"
+     id="use2936"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(24,-24)"
+     id="use2938"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(36,-24)"
+     id="use2940"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+  <use
+     transform="translate(48,-24)"
+     id="use2942"
+     x="0"
+     y="0"
+     width="250"
+     height="125"
+     xlink:href="#use42" />
+</svg>

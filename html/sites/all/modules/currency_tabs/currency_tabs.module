@@ -1,0 +1,381 @@
+<?php
+/**
+ * @file
+ * A block module that shows currency data using tabs
+ */
+
+/**
+ * Implements hook_init().
+ */
+function currency_tabs_init() {
+  drupal_add_css('//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css', array('type' => 'external'));
+  drupal_add_css(drupal_get_path('module', 'currency_tabs') . '/currency_tabs.css');
+
+  drupal_add_js('//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js', array(
+      'scope' => 'footer',
+      'type'  => 'external'
+    )
+  );
+  drupal_add_js('https://code.highcharts.com/highcharts.js', array(
+      'scope' => 'footer',
+      'type'  => 'external'
+    )
+  );
+  drupal_add_js('http://code.highcharts.com/modules/exporting.js', array(
+      'scope' => 'footer',
+      'type'  => 'external'
+    )
+  );
+  drupal_add_js(drupal_get_path('module', 'openex') . '/openex.js', array('scope' => 'footer'));
+  drupal_add_js(drupal_get_path('module', 'currency_tabs') . '/currency_tabs.js');
+}
+
+/**
+ * Implements hook_menu().
+ */
+function currency_tabs_menu() {
+  $items['admin/config/services/currency_tabs'] = array(
+    'title'            => 'Currency tabs',
+    'type'             => MENU_NORMAL_ITEM,
+    'page callback'    => 'drupal_get_form',
+    'page arguments'   => array('currency_tabs_config_form'),
+    'access arguments' => array('administer site configuration'),
+  );
+
+  return $items;
+}
+
+/**
+ *  Implements hook_theme().
+ */
+function currency_tabs_theme() {
+  return array(
+    'currency_tabs_block'   => array(
+      'variables' => array(
+        'currency' => NULL,
+        'history'  => NULL,
+        'alert'    => NULL,
+      ),
+      'template'  => 'currency-tabs-block',
+    ),
+    'currency_matrix_block' => array(
+      'variables' => array('currency' => NULL),
+      'template'  => 'currency-matrix-block',
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function currency_tabs_block_info() {
+  $blocks = array();
+  $blocks['currency_tabs'] = array(
+    'info'   => t('Currency Tabs'),
+    'cache'  => DRUPAL_NO_CACHE,
+  );
+  $blocks['currency_matrix'] = array(
+    'info'   => t('Currency Matrix Chart'),
+    'cache'  => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function currency_tabs_block_view($delta = '') {
+  $block = array();
+
+  if (!user_access('access content')) {
+    return $block;
+  }
+
+  switch ($delta) {
+    case 'currency_tabs':
+      $appId = variable_get('currency_tabs_app_id');
+      $baseCurrencies = variable_get('currency_tabs_currencies', 'USD,GBP,JPY,EUR,CAD,AUD');
+      $fields = variable_get('currency_tabs_fields', array());
+
+      if (!empty($appId) && !empty($baseCurrencies) && !empty($fields)) {
+        if ((arg(0) == 'node' || arg(0) == 'currencies') && ($nid = intval(arg(1))) && !arg(2)) {
+          $node = node_load($nid);
+
+          foreach ($fields as $field_name) {
+            if (!empty($node->{$field_name}[LANGUAGE_NONE][0]['value'])) {
+              $code = $node->{$field_name}[LANGUAGE_NONE][0]['value'];
+
+              // History
+
+              $history = currency_tabs_get_history_rates($code);
+              $data = array(
+                'start_date' => $history['start_date'],
+                'end_date'   => $history['end_date'],
+                'base'       => $history['base'],
+                'code'       => 'USD',
+                'rates'      => array(),
+              );
+
+              foreach ($history['rates'] as $date => $info) {
+                list($key, $value) = each($info);
+                $data['rates'][] = $value;
+                $data['code'] = $key;
+              }
+
+              drupal_add_js(array('currency_history' => $data), 'setting');
+
+              // Output
+
+              $block['subject'] = t('Exchange Rates');
+              $block['content'] = theme('currency_tabs_block', array(
+                  'currency' => currency_tabs_matrix($code),
+                  'history'  => '<div id="currency-tabs-history-chart"></div>',
+                  'alert'    => NULL,
+                )
+              );
+            }
+          }
+        }
+      }
+
+      break;
+
+    case 'currency_matrix':
+      $block['subject'] = t('Exchange Rates');
+      $block['content'] = theme('currency_matrix_block', array('currency' => currency_tabs_matrix()));
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Currency matrix
+ */
+function currency_tabs_matrix($code = NULL) {
+  $rates = currency_tabs_get_latest_rates($code);
+  $currencies = currency_tabs_get_currencies($code);
+
+  $header = array('');
+  $rows = array();
+
+  foreach ($currencies as $currency_from) {
+    $header[] = $currency_from;
+  }
+
+  foreach ($currencies as $currency_to) {
+    $row = array(
+      array(
+        'data'   => '1 ' . $currency_to . ' =',
+        'header' => TRUE,
+      ),
+    );
+
+    foreach ($currencies as $currency_from) {
+      $row[] = currency_tabs_convert($currency_from, $currency_to, $rates['rates']);
+    }
+
+    $rows[] = $row;
+  }
+
+  return theme('table', array(
+      'header' => $header,
+      'rows'   => $rows,
+    )
+  );
+}
+
+/**
+ * Settings form
+ */
+function currency_tabs_config_form() {
+  $form = array();
+
+  $form['currency_tabs_app_id'] = array(
+    '#title'         => 'Openex App ID',
+    '#type'          => 'textfield',
+    '#default_value' => variable_get('currency_tabs_app_id'),
+  );
+
+  $form['currency_tabs_currencies'] = array(
+    '#title'         => 'List of base currencies',
+    '#type'          => 'textfield',
+    '#default_value' => variable_get('currency_tabs_currencies', 'USD,GBP,JPY,EUR,CAD,AUD'),
+    '#description'   => 'Separate each currency with comma',
+  );
+
+  $options = array();
+  $instances = field_info_instances('node');
+  foreach ($instances as $items) {
+    foreach ($items as $field_name => $field_info) {
+      $field = field_info_field($field_name);
+      if ($field['type'] == 'text' && $field['module'] == 'text') {
+        $options[$field_name] = $field_info['label'];
+      }
+    }
+  }
+
+  $form['currency_tabs_fields'] = array(
+    '#title'         => 'Fields with currency code',
+    '#type'          => 'checkboxes',
+    '#options'       => $options,
+    '#default_value' => variable_get('currency_tabs_fields', array()),
+  );
+
+  $period = drupal_map_assoc(array(
+      DRUPAL_NO_CACHE,
+      CACHE_PERMANENT,
+      60,
+      120,
+      180,
+      300,
+      600,
+      1800,
+      3600,
+      7200,
+      10800,
+      21600,
+      43200,
+      86400,
+      172800,
+      259200,
+      604800,
+      1209600,
+      2419200,
+      5184000,
+    ), 'format_interval'
+  );
+  $period[DRUPAL_NO_CACHE] = 'No cache';
+  $period[CACHE_PERMANENT] = 'Permanent';
+
+  $form['currency_tabs_cache_latest'] = array(
+    '#title'         => 'Latest rates cache lifetime',
+    '#type'          => 'select',
+    '#options'       => $period,
+    '#default_value' => variable_get('currency_tabs_cache_latest', DRUPAL_NO_CACHE),
+  );
+
+  $form['currency_tabs_cache_history'] = array(
+    '#title'         => 'History data cache lifetime',
+    '#type'          => 'select',
+    '#options'       => $period,
+    '#default_value' => variable_get('currency_tabs_cache_history', CACHE_PERMANENT),
+  );
+
+  return system_settings_form($form);
+}
+
+/**
+ * Get currencies list
+ */
+function currency_tabs_get_currencies($code) {
+  $list = variable_get('currency_tabs_currencies', 'USD,GBP,JPY,EUR,CAD,AUD');
+  $list = explode(',', $list);
+  $list = array_map('trim', $list);
+
+  if ($code) {
+    array_unshift($list, $code);
+  }
+
+  $list = array_unique($list);
+
+  return $list;
+}
+
+/**
+ * Get latest rates
+ */
+function currency_tabs_get_latest_rates($code, $symbols = NULL) {
+  if (!isset($symbols)) {
+    $symbols = implode(',', currency_tabs_get_currencies($code));
+  }
+
+  $cid = 'currency:latest:' . $symbols;
+
+  if (variable_get('currency_tabs_cache_latest', DRUPAL_NO_CACHE) != DRUPAL_NO_CACHE && ($cache = cache_get($cid))) {
+    return $cache->data;
+  }
+
+  $requestParams = array(
+    'app_id'  => variable_get('currency_tabs_app_id'),
+    'symbols' => $symbols,
+  );
+
+  $url = 'http://openexchangerates.org/api/latest.json?' . drupal_http_build_query($requestParams);
+
+  $response = drupal_http_request($url);
+
+  if (empty($response->data)) {
+    return array();
+  }
+
+  $data = json_decode($response->data, TRUE);
+
+  if (empty($data['rates'])) {
+    return array();
+  }
+
+  if (variable_get('currency_tabs_cache_latest', DRUPAL_NO_CACHE) != DRUPAL_NO_CACHE) {
+    cache_set($cid, $data);
+  }
+
+  return $data;
+}
+
+/**
+ * Get history rates
+ */
+function currency_tabs_get_history_rates($code) {
+  $cid = 'currency:history:' . $code;
+
+  if (variable_get('currency_tabs_cache_history', DRUPAL_NO_CACHE) != DRUPAL_NO_CACHE && ($cache = cache_get($cid))) {
+    return $cache->data;
+  }
+
+  $requestParams = array(
+    'app_id'  => variable_get('currency_tabs_app_id'),
+    'base'    => $code,
+    'symbols' => 'USD',
+    'start'   => date('Y-m-d', strtotime('now -1 month')),
+    'end'     => date('Y-m-d'),
+  );
+
+  $url = 'http://openexchangerates.org/api/time-series.json?' . drupal_http_build_query($requestParams);
+
+  $response = drupal_http_request($url);
+
+  if (empty($response->data)) {
+    return array();
+  }
+
+  $data = json_decode($response->data, TRUE);
+
+  if (empty($data['rates'])) {
+    return array();
+  }
+
+  if (variable_get('currency_tabs_cache_history', DRUPAL_NO_CACHE) != DRUPAL_NO_CACHE) {
+    cache_set($cid, $data);
+  }
+
+  return $data;
+}
+
+/**
+ * Convert from one currency to other
+ */
+function currency_tabs_convert($from, $to, $rates = NULL) {
+  if ($from == $to) {
+    return 1;
+  }
+
+  if (!isset($rates)) {
+    $rates = currency_tabs_get_latest_rates(NULL, $from . ',' . $to);
+  }
+
+  if (empty($rates[$from]) || empty($rates[$to])) {
+    return NULL;
+  }
+
+  return round($rates[$from] * (1 / $rates[$to]), 3);
+}

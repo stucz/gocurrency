@@ -1,0 +1,81 @@
+<?php
+/**
+ * @file
+ * A block module that shows historical currency data using highcharts
+ */
+
+/*  CACHE
+** ----------------------------------------------------------------*/
+function _get_historical_rates($currency, $reset = 0) {
+
+	if ($reset == 1) { cache_clear_all('acct_' . $currency, 'cache'); }
+	if ($cache = cache_get( 'acct_' . $currency )) { return $cache->data; }
+
+	$data = array();
+	// MAKE YOUR DATA
+	
+	cache_set('acct_' . $currency, $data, 'cache', strtotime('+1 hour'));
+	return $data;
+	
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function historical_rates_block_info() {
+  $blocks['historical_rates'] = array(
+    // The name that will appear in the block list.
+    'info' => t('Historical Exchange Rates Chart'),
+    // Default setting.
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+  return $blocks;
+}
+
+
+
+/**
+ * Implements hook_block_view().
+ * 
+ * Prepares the contents of the block.
+ */
+
+function historical_rates_block_view($delta = '') {
+  switch ($delta) {
+    case 'historical_rates':
+      $block['subject'] = t('Historical Exchange Rates');
+      if (user_access('access content')) {
+      // Retrieve and process data here.
+      	// Requested file
+		// Could also be e.g. 'currencies.json' or 'historical/2011-01-01.json'
+		$file = 'time-series.json';
+		$appId = '8c0ead44445346f4b3b5588270304af2';
+		//get todays date
+                $today = date("Y-m-d");
+                $monthago = date("y-m-d",strtotime("-1 day"));
+
+                $start=$monthago;
+                $end=$today;
+                $base = "USD";
+                
+         	$symbols = 'THB';
+			// Open CURL session:
+			$ch = curl_init("http://openexchangerates.org/api/{$file}?app_id={$appId}&start={$start}&end={$end}&base={$base}&symbols={$symbols}");
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+			// Get the data:
+			$json = curl_exec($ch);
+			curl_close($ch);
+		
+
+		 // Pass data through theme function.
+          $block['content'] = t('<div id="container" style="height: 400px; margin: 0 auto"></div>
+                <div id="alert" style="display:none;" class="alert alert-warning alert-dismissible" role="alert">
+                    <button style="display: none;" type="button" class="close" data-dismiss="alert">
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <span class="description">Warning! </span>
+                </div>');
+      }
+      return $block;
+    }
+  }

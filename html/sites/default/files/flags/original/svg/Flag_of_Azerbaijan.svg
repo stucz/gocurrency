@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.0"
+   width="1200"
+   height="600"
+   id="svg2">
+  <defs
+     id="defs21" />
+  <rect
+     width="1200"
+     height="600"
+     x="0"
+     y="0"
+     id="blue"
+     style="fill:#0098c3" />
+  <rect
+     width="1200"
+     height="200"
+     x="0"
+     y="200"
+     id="red"
+     style="fill:#e00034" />
+  <rect
+     width="1200"
+     height="200"
+     x="0"
+     y="400"
+     id="green"
+     style="fill:#00ae65" />
+  <circle
+     cx="560"
+     cy="300"
+     r="84"
+     id="wcircle"
+     style="fill:#ffffff" />
+  <circle
+     cx="582"
+     cy="300"
+     r="70"
+     id="rcircle"
+     style="fill:#e00034" />
+  <path
+     d="M 676.85248,331.78713 L 653.88751,321.39417 L 645.04621,345 L 636.15645,321.41238 L 613.21287,331.85248 L 623.60583,308.88751 L 600,300.04621 L 623.58762,291.15645 L 613.14752,268.21287 L 636.11249,278.60583 L 644.95379,255 L 653.84355,278.58762 L 676.78713,268.14752 L 666.39417,291.11249 L 690,299.95379 L 666.41238,308.84355 L 676.85248,331.78713 z"
+     id="path4162"
+     style="fill:#ffffff;fill-opacity:1" />
+</svg>

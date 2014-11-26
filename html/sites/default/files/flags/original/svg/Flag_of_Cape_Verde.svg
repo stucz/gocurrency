@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="510" height="300">
+<rect width="510" height="300" style="fill:#003893"/>
+<rect width="510" height="75" y="150" style="fill:#fff"/>
+<rect width="510" height="25" y="175" style="fill:#ce1126"/>
+<path d="M 191.24994,97.499688 L 187.88289,107.86242 L 176.98686,107.86242 L 185.80193,114.26695 L 182.43487,124.62969 L 191.24994,118.22516 L 200.06502,124.62969 L 196.69796,114.26695 L 205.51303,107.86242 L 194.617,107.86242 L 191.24994,97.499688 z" id="path2937" style="fill:#ffcc00"/>
+<use transform="translate(-44.08,14.320001)" id="use2409" xlink:href="#path2937"/>
+<use transform="translate(44.08,14.320001)" id="use2393" xlink:href="#path2937"/>
+<use transform="translate(71.33,51.820021)" id="use2395" xlink:href="#path2937"/>
+<use transform="translate(71.33,98.180021)" id="use2397" xlink:href="#path2937"/>
+<use transform="translate(44.08,135.68002)" id="use2399" xlink:href="#path2937"/>
+<use transform="translate(0,149.99994)" id="use2401" xlink:href="#path2937"/>
+<use transform="translate(-44.08,135.68002)" id="use2403" xlink:href="#path2937"/>
+<use transform="translate(-71.32996,98.180021)" id="use2405" xlink:href="#path2937"/>
+<use transform="translate(-71.32996,51.820021)" id="use2407" xlink:href="#path2937"/></svg>

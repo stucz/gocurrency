@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 180 120"
+   id="svg3044"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Madeira.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata3058">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3056">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 400 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1200 : 400 : 1"
+       inkscape:persp3d-origin="600 : 266.66667 : 1"
+       id="perspective3060" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="821"
+     inkscape:window-width="935"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.46583333"
+     inkscape:cx="600"
+     inkscape:cy="400"
+     inkscape:window-x="-4"
+     inkscape:window-y="0"
+     inkscape:current-layer="svg3044" />
+  <rect
+     width="180"
+     height="120"
+     id="rect3046"
+     x="0"
+     y="0"
+     style="fill:#004b8f" />
+  <rect
+     x="60"
+     width="60"
+     height="120"
+     id="rect3048"
+     y="0"
+     style="fill:#ffca13" />
+  <path
+     id="1"
+     d="M 66,33 L 114,33 L 98,38 L 98,82 L 114,87 L 66,87 L 82,82 L 82,38 L 66,33 z"
+     style="fill:#cc0000" />
+  <use
+     xlink:href="#1"
+     transform="matrix(0,1,-1,0,150,-30)"
+     id="use3051"
+     x="0"
+     y="0"
+     width="180"
+     height="120" />
+  <path
+     d="M 86,38 L 94,38 L 94,82 L 86,82 L 86,38 z M 68,56 L 112,56 L 112,64 L 68,64 L 68,56 z"
+     id="path3053"
+     style="fill:#ffffff" />
+</svg>

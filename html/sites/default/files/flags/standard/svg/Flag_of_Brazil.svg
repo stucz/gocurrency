@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="-2100 -1470 4200 2940"
+   id="svg2432"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Brazil.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata2553">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="674"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.77638889"
+     inkscape:cx="360"
+     inkscape:cy="252"
+     inkscape:window-x="106"
+     inkscape:window-y="194"
+     inkscape:current-layer="svg2432" />
+  <title
+     id="title2434">Flag of Brazil</title>
+  <defs
+     id="defs2436">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 252 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="720 : 252 : 1"
+       inkscape:persp3d-origin="360 : 168 : 1"
+       id="perspective2555" />
+    <path
+       id="O"
+       d="M 0,0 C 17.39697,-1.1836191e-15 31.5,-15.670034 31.5,-35 C 31.5,-54.329966 17.39697,-70 1.9288187e-15,-70 C -17.39697,-70 -31.5,-54.329966 -31.5,-35 C -31.5,-15.670034 -17.39697,-3.5508572e-15 -5.7864561e-15,0 M 0,-13 C 10.217268,-13 18.5,-22.849736 18.5,-35 C 18.5,-47.150264 10.217268,-57 1.1327983e-15,-57 C -10.217268,-57 -18.5,-47.150264 -18.5,-35 C -18.5,-22.849736 -10.217268,-13 -3.3983949e-15,-13"
+       style="fill-rule:evenodd" />
+    <g
+       id="R">
+      <use
+         xlink:href="#P"
+         id="use2440"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <path
+         d="M 28,0 C 28,-10 28,-32 13,-32 L -6,-32 C 16,-32 16,-10 16,0"
+         id="path2442" />
+    </g>
+    <path
+       id="D"
+       d="M -31.5,0 L 1.5,0 C 18.068542,-1.0145306e-15 31.5,-13.431458 31.5,-30 L 31.5,-40 C 31.5,-56.568542 18.068542,-70 1.5,-70 L -31.5,-70 L -31.5,0 z M -18.5,-13 L 0.5,-13 C 10.99341,-13 19.5,-21.50659 19.5,-32 L 19.5,-38 C 19.5,-48.49341 10.99341,-57 0.5,-57 L -18.5,-57 L -18.5,-13 z"
+       style="fill-rule:evenodd" />
+    <path
+       id="E"
+       d="M 0,0 L 63,0 L 63,-13 L 12,-13 L 12,-31 L 52,-31 L 52,-43 L 12,-43 L 12,-57 L 60,-57 L 60,-70 L 0,-70 L 0,0 z"
+       transform="translate(-31.5,0)" />
+    <path
+       id="M"
+       d="M -31.5,0 L -19.5,0 L -19.5,-48 L -5.5,0 L 5.5,0 L 19.5,-48 L 19.5,0 L 31.5,0 L 31.5,-70 L 14,-70 L 0,-22 L -14,-70 L -31.5,-70 L -31.5,0 z" />
+    <path
+       id="E_"
+       d="M -26.25,0 L 26.25,0 L 26.25,-12 L -14.25,-12 L -14.25,-28 L 18.75,-28 L 18.75,-40 L -14.25,-40 L -14.25,-51 L 25,-51 L 25,-63 L -26.25,-63 L -26.25,0 z" />
+    <path
+       id="P"
+       d="M -31.5,0 L -18.5,0 L -18.5,-26 L 9.5,-26 C 21.650264,-26 31.5,-35.849736 31.5,-48 C 31.5,-60.150264 21.650264,-70 9.5,-70 L -30.5,-70 L -31.5,0 z M -18.5,-39 L 8.5,-39 C 13.470563,-39 17.5,-43.029437 17.5,-48 C 17.5,-52.970563 13.470563,-57 8.5,-57 L -18.5,-57 L -18.5,-39 z"
+       style="fill-rule:evenodd" />
+    <g
+       id="G">
+      <clipPath
+         id="gcut">
+        <path
+           d="M -31.5,0 L -31.5,-70 L 31.5,-70 L 31.5,0 L -31.5,0 z M 0,-47 L 0,-35 L 31.5,-35 L 31.5,-47 L 0,-47 z"
+           id="path2451" />
+      </clipPath>
+      <use
+         xlink:href="#O"
+         clip-path="url(#gcut)"
+         id="use2453"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <rect
+         x="5"
+         y="-35"
+         width="26.5"
+         height="10"
+         id="rect2455" />
+      <rect
+         x="21.5"
+         y="-35"
+         width="10"
+         height="35"
+         id="rect2457" />
+    </g>
+    <path
+       id="S"
+       d="M -15.75,-22 C -15.75,-15 -9,-11.5 1,-11.5 C 11,-11.5 15.74,-14.75 15.75,-19.25 C 15.75,-33.5 -31,-24.5 -30.75,-49.5 C -30.5,-71 -6,-70 3,-70 C 12,-70 29,-66 28.75,-48.75 L 13.5,-48.75 C 13.5,-56.25 6.5,-59 -1.5,-59 C -9.25,-59 -14.75,-57.75 -14.75,-50.5 C -15,-38.75 31.5,-46.5 31.5,-21.75 C 31.5,-3.5 13.5,0 0,0 C -11.5,0 -31.55,-4.5 -31.5,-22 L -15.75,-22 z" />
+    <g
+       id="star">
+      <g
+         id="cone">
+        <polygon
+           id="triangle"
+           points="0,0 0,1 0.5,1 0,0 "
+           transform="matrix(0.9510565,0.309017,-0.309017,0.9510565,0,-1)" />
+        <use
+           xlink:href="#triangle"
+           transform="scale(-1,1)"
+           id="use2463"
+           x="0"
+           y="0"
+           width="4200"
+           height="2940" />
+      </g>
+      <use
+         xlink:href="#cone"
+         transform="matrix(0.309017,0.9510565,-0.9510565,0.309017,0,0)"
+         id="use2465"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#cone"
+         transform="matrix(0.309017,-0.9510565,0.9510565,0.309017,0,0)"
+         id="use2467"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#cone"
+         transform="matrix(-0.809017,0.5877853,-0.5877853,-0.809017,0,0)"
+         id="use2469"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#cone"
+         transform="matrix(-0.809017,-0.5877853,0.5877853,-0.809017,0,0)"
+         id="use2471"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+    </g>
+    <use
+       id="star1"
+       xlink:href="#star"
+       transform="scale(31.5,31.5)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+    <use
+       id="star2"
+       xlink:href="#star"
+       transform="scale(26.25,26.25)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+    <use
+       id="star3"
+       xlink:href="#star"
+       transform="scale(21,21)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+    <use
+       id="star4"
+       xlink:href="#star"
+       transform="scale(15,15)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+    <use
+       id="star5"
+       xlink:href="#star"
+       transform="scale(10.5,10.5)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+  </defs>
+  <rect
+     id="field"
+     x="-2100"
+     y="-1470"
+     width="4200"
+     height="2940"
+     style="fill:#00923f" />
+  <path
+     id="rhombus"
+     d="M -1743,0 L 0,1113 L 1743,0 L 0,-1113 L -1743,0 z"
+     style="fill:#f8c300" />
+  <circle
+     id="circle"
+     r="735"
+     cx="0"
+     cy="0"
+     sodipodi:cx="0"
+     sodipodi:cy="0"
+     sodipodi:rx="735"
+     sodipodi:ry="735"
+     style="fill:#28166f" />
+  <clipPath
+     id="clipcircle">
+    <use
+       xlink:href="#circle"
+       id="use2482"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+  </clipPath>
+  <path
+     id="band"
+     d="M -2205,1470 C -2205,484.17173 -1405.8283,-314.99997 -420,-314.99997 C 565.82827,-314.99997 1365,484.17173 1365,1470 L 1260,1470 C 1260,542.16162 507.83838,-210 -420,-210 C -1347.8384,-210 -2100,542.16162 -2100,1470 L -2205,1470 z"
+     clip-path="url(#clipcircle)"
+     style="fill:#ffffff" />
+  <g
+     transform="translate(-420,1470)"
+     id="g2485"
+     style="fill:#00923f">
+    <g
+       id="ORDEM"
+       transform="matrix(0.9925462,-0.1218693,0.1218693,0.9925462,0,0)">
+      <use
+         xlink:href="#O"
+         transform="translate(0,-1697.5)"
+         id="use2488"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#R"
+         transform="matrix(0.9986295,5.2335956e-2,-5.2335956e-2,0.9986295,88.840286,-1695.1736)"
+         id="use2490"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#D"
+         transform="matrix(0.9945219,0.1045285,-0.1045285,0.9945219,177.43707,-1688.2009)"
+         id="use2492"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#E"
+         transform="matrix(0.9876883,0.1564345,-0.1564345,0.9876883,265.5475,-1676.601)"
+         id="use2494"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#M"
+         transform="matrix(0.9781476,0.2079117,-0.2079117,0.9781476,352.9301,-1660.4056)"
+         id="use2496"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+    </g>
+    <use
+       xlink:href="#E_"
+       transform="matrix(0.9855561,0.1693495,-0.1693495,0.9855561,287.47078,-1672.9814)"
+       id="use2498"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+    <g
+       id="PROGRESSO"
+       transform="matrix(0.9681476,0.25038,-0.25038,0.9681476,0,0)">
+      <use
+         xlink:href="#P"
+         transform="translate(0,-1697.5)"
+         id="use2501"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#R"
+         transform="matrix(0.9986295,5.2335956e-2,-5.2335956e-2,0.9986295,88.840286,-1695.1736)"
+         id="use2503"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#O"
+         transform="matrix(0.9945219,0.1045285,-0.1045285,0.9945219,177.43707,-1688.2009)"
+         id="use2505"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#G"
+         transform="matrix(0.9876883,0.1564345,-0.1564345,0.9876883,265.5475,-1676.601)"
+         id="use2507"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#R"
+         transform="matrix(0.9781476,0.2079117,-0.2079117,0.9781476,352.9301,-1660.4056)"
+         id="use2509"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#E"
+         transform="matrix(0.9659258,0.258819,-0.258819,0.9659258,439.34533,-1639.6591)"
+         id="use2511"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#S"
+         transform="matrix(0.9510565,0.309017,-0.309017,0.9510565,524.55635,-1614.4184)"
+         id="use2513"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#S"
+         transform="matrix(0.9335804,0.3583679,-0.3583679,0.9335804,608.32959,-1584.7528)"
+         id="use2515"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         xlink:href="#O"
+         transform="matrix(0.9135455,0.4067366,-0.4067366,0.9135455,690.43545,-1550.7434)"
+         id="use2517"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+    </g>
+  </g>
+  <g
+     id="stars"
+     style="fill:#ffffff">
+    <use
+       id="Alpha_Canis_Minoris"
+       xlink:href="#star1"
+       transform="translate(-600,-132)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+    <g
+       id="Canis_Majoris">
+      <use
+         id="Alpha_Canis_Majoris"
+         xlink:href="#star1"
+         transform="translate(-535,177)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Beta_Canis_Majoris"
+         xlink:href="#star3"
+         transform="translate(-625,243)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Gamma_Canis_Majoris"
+         xlink:href="#star4"
+         transform="translate(-463,132)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Delta_Canis_Majoris"
+         xlink:href="#star2"
+         transform="translate(-382,250)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Epsilon_Canis_Majoris"
+         xlink:href="#star2"
+         transform="translate(-404,323)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+    </g>
+    <use
+       id="Alpha_Virginis"
+       xlink:href="#star1"
+       transform="translate(228,-228)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+    <g
+       id="Scorpio">
+      <use
+         id="Alpha_Scorpii"
+         xlink:href="#star1"
+         transform="translate(515,258)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Beta_Scorpii"
+         xlink:href="#star3"
+         transform="translate(617,265)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Epsilon_Scorpii"
+         xlink:href="#star2"
+         transform="translate(545,323)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Theta_Scorpii"
+         xlink:href="#star2"
+         transform="translate(368,477)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Iota_Scorpii"
+         xlink:href="#star3"
+         transform="translate(367,551)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Kappa_Scorpii"
+         xlink:href="#star3"
+         transform="translate(441,419)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Lambda_Scorpii"
+         xlink:href="#star2"
+         transform="translate(500,382)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Mu_Scorpii"
+         xlink:href="#star3"
+         transform="translate(365,405)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+    </g>
+    <g
+       id="Hydra">
+      <use
+         id="Alpha_Hydrae"
+         xlink:href="#star2"
+         transform="translate(-280,30)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Gamma_Hydrae"
+         xlink:href="#star3"
+         transform="translate(200,-37)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+    </g>
+    <g
+       id="Crux">
+      <use
+         id="Alpha_Crucis"
+         xlink:href="#star1"
+         transform="translate(0,330)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Beta_Crucis"
+         xlink:href="#star2"
+         transform="translate(85,184)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Gamma_Crucis"
+         xlink:href="#star2"
+         transform="translate(0,118)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Delta_Crucis"
+         xlink:href="#star3"
+         transform="translate(-74,184)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Epsilon_Crucis"
+         xlink:href="#star4"
+         transform="translate(-37,235)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+    </g>
+    <g
+       id="Triangulum_Australe">
+      <use
+         id="Alpha_Trianguli_Australe"
+         xlink:href="#star2"
+         transform="translate(220,495)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Beta_Trianguli_Australe"
+         xlink:href="#star3"
+         transform="translate(283,430)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+      <use
+         id="Gamma_Trianguli_Australe"
+         xlink:href="#star3"
+         transform="translate(162,412)"
+         x="0"
+         y="0"
+         width="4200"
+         height="2940" />
+    </g>
+    <use
+       id="Alpha_Carinae"
+       xlink:href="#star1"
+       transform="translate(-295,390)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+    <use
+       id="Sigma_Octantis"
+       xlink:href="#star5"
+       transform="translate(0,575)"
+       x="0"
+       y="0"
+       width="4200"
+       height="2940" />
+  </g>
+</svg>

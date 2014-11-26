@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="-19 -10 38 20"
+   preserveAspectRatio="xMidYMid meet"
+   zoomAndPan="magnify"
+   id="svg4109"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Federated_States_of_Micronesia.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata4135">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4133">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 200 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="760 : 200 : 1"
+       inkscape:persp3d-origin="380 : 133.33333 : 1"
+       id="perspective4137" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="707"
+     inkscape:window-width="812"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.73552632"
+     inkscape:cx="380"
+     inkscape:cy="200"
+     inkscape:window-x="251"
+     inkscape:window-y="205"
+     inkscape:current-layer="svg4109" />
+  <rect
+     x="-19"
+     y="-10"
+     width="38"
+     height="20"
+     id="rect4111"
+     style="fill:#75b2dd" />
+  <g
+     id="star"
+     transform="matrix(2,0,0,2,0,-6)"
+     style="fill:#ffffff">
+    <g
+       id="cone">
+      <polygon
+         id="triangle"
+         points="0,0 0,1 0.5,1 0,0 "
+         transform="matrix(0.9510565,0.309017,-0.309017,0.9510565,0,-1)" />
+      <use
+         xlink:href="#triangle"
+         transform="scale(-1,1)"
+         id="use4116"
+         x="0"
+         y="0"
+         width="38"
+         height="20" />
+    </g>
+    <use
+       xlink:href="#cone"
+       transform="matrix(0.309017,0.9510565,-0.9510565,0.309017,0,0)"
+       id="use4118"
+       x="0"
+       y="0"
+       width="38"
+       height="20" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(0.309017,-0.9510565,0.9510565,0.309017,0,0)"
+       id="use4120"
+       x="0"
+       y="0"
+       width="38"
+       height="20" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(-0.809017,0.5877853,-0.5877853,-0.809017,0,0)"
+       id="use4122"
+       x="0"
+       y="0"
+       width="38"
+       height="20" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(-0.809017,-0.5877853,0.5877853,-0.809017,0,0)"
+       id="use4124"
+       x="0"
+       y="0"
+       width="38"
+       height="20" />
+  </g>
+  <use
+     xlink:href="#star"
+     transform="matrix(0,1,-1,0,0,0)"
+     id="use4126"
+     x="0"
+     y="0"
+     width="38"
+     height="20" />
+  <use
+     xlink:href="#star"
+     transform="matrix(0,-1,1,0,0,0)"
+     id="use4128"
+     x="0"
+     y="0"
+     width="38"
+     height="20" />
+  <use
+     xlink:href="#star"
+     transform="scale(-1,-1)"
+     id="use4130"
+     x="0"
+     y="0"
+     width="38"
+     height="20" />
+</svg>

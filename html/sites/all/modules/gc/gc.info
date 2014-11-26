@@ -1,0 +1,6 @@
+name = GoCurrency Custom
+description = Tweaks for GoCurrency
+core = 7.x
+files[] = gc.module
+package = Custom
+

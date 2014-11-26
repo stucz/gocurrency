@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+   width="1000"
+   height="500"
+   viewBox="0 0 72 36">
+  <rect
+     width="72"
+     height="36"
+     style="fill:#0047ba"/>
+  <rect
+     width="72"
+     height="12"
+     y="12"
+     style="fill:#fff"/>
+  <path
+     d="M 36,16 L 36.449028,17.381966 L 37.902113,17.381966 L 36.726543,18.236068 L 37.17557,19.618034 L 36,18.763932 L 34.824429,19.618034 L 35.273457,18.236068 L 34.097887,17.381966 L 35.550972,17.381966 L 36,16 z"
+     id="path1888"
+     style="fill:#0047ba"/>
+  <use
+     transform="translate(10,3)"
+     xlink:href="#path1888"/>
+  <use
+     transform="translate(0,-6)"
+     xlink:href="#use2395"/>
+  <use
+     transform="translate(-20,6)"
+     xlink:href="#use2397"/>
+  <use
+     transform="translate(0,-6)"
+     xlink:href="#use2399"/>
+</svg>

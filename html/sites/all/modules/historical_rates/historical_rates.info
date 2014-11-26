@@ -1,0 +1,6 @@
+name = Historical Currency Rates
+description = Displays historical currency data in highcharts
+core = 7.x
+files[] = historical_rates.module
+package = Custom
+

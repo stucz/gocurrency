@@ -1,0 +1,13 @@
+<?php
+/**
+ * Implements hook_uninstall().
+ *
+ * @ingroup currency_tabs
+ */
+function currency_tabs_uninstall() {
+  variable_del('currency_tabs_app_id');
+  variable_del('currency_tabs_currencies');
+  variable_del('currency_tabs_fields');
+  variable_del('currency_tabs_cache_latest');
+  variable_del('currency_tabs_cache_history');
+}

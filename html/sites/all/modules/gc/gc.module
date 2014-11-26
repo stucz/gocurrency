@@ -1,0 +1,248 @@
+<?php
+/**
+ * @file
+ *
+ */
+
+define('LANG', 'und');
+
+/* MENU
+** ----------------------------------------------------------------*/
+function gc_menu() {
+
+  $items = array();
+
+  $items['tester'] = array(
+    'title' => 'Tester',
+	'type' => MENU_CALLBACK,
+    'page callback' => 'gc_page_tester',
+    'access arguments' => array('access content'),
+    'file' => 'includes/gc.pages.inc',
+  );
+
+  $items['admin/config/system/gc'] = array(
+    'title' => 'GoCurrency Settings',
+    'description' => 'Configure settings for GoCurrency website.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('gc_settings_form'),
+    'access arguments' => array('access manager console'),
+    'file' => 'includes/gc.admin.inc',
+	'type' => MENU_NORMAL_ITEM,
+  );    
+  
+  $items['admin/config/system/gc/general'] = array(
+    'title' => 'GoCurrency Settings',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+    'weight' => -10,
+  );  
+  
+  $items['admin/config/system/gc/follow'] = array(
+    'title' => 'Follow Links',
+    'description' => 'Social network follow links',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('gc_settings_follow_form'),
+    'access arguments' => array('access manager console'),
+    'file' => 'includes/gc.admin.inc',
+    'type' => MENU_LOCAL_TASK,
+    'weight' => 5,
+  );      
+
+  return $items;
+  
+}
+
+/* includes
+** ----------------------------------------------------------------*/
+// module_load_include('inc', 'gc', 'includes/gc.blocks');
+
+/*  theme
+** ----------------------------------------------------------------*/
+/*
+function gc_theme() {
+  $module_path = drupal_get_path('module', 'gc');
+  $base = array( 'file' => 'gc.theme.inc', 'path' => "$module_path/includes" );
+  return array(
+    'gc_solr_item' => $base + array(
+      'variables' => array('type' => NULL, 'data' => NULL, 'title' => NULL, 'snippet' => NULL),
+    ),
+    'gc_solr_item_fields' => $base + array(
+      'variables' => array('items' => NULL),
+    ),
+  );
+}
+*/
+
+/* Permissions
+** ----------------------------------------------------------------*/
+function gc_permission() {
+  return array(
+    'access manager console' => array(
+      'title' => 'Access manager console',
+      'description' => 'Manage site settings and content',
+      'restrict access' => TRUE,
+    ),
+  );
+}
+
+/* [CRON] queue
+** Implements hook_cron_queue_info()
+** ----------------------------------------------------------------*/
+function gc_cron_queue_info() {
+  $queues = array();
+  $queues['create_nodes'] = array( 'worker callback' => 'gc_queue_create_node', 'time' => 20 );
+  return $queues;
+}
+
+/* [SYNC] queue
+** ----------------------------------------------------------------*/
+function gc_queue_create_node($item) {
+	_save_node($item['edit'], $item['type'], $item['title'], $item['fields'], $item['dates']);
+}
+
+/* [SYNC] queue
+** ----------------------------------------------------------------*/
+function _gc_queue($items = array(), $qid = 'create_nodes') {
+	if (!isset($items) || !count($items)) { return NULL; }
+	
+    $queue = DrupalQueue::get($qid);
+	foreach ($items as $item) { $queue->createItem($item); }
+	$total = $queue->numberOfItems();
+	
+	watchdog('gc', 'Added %count items to %queue. Total items in queue: %total', array( 
+		'%count' => count($items),
+		'%queue' => $qid,
+		'%total' => $total,
+	));
+
+}
+
+/* [ENTITY] node
+** ----------------------------------------------------------------*/
+function _save_node($edit = array(), $type = 'article', $title = '', $fields = array(), $dates = array()) {
+
+	if (isset($edit->nid)) { $entity = $edit; }
+	else {
+		$values = array( 'type' => $type, 'uid' => 1, 'status' => 1, 'promote' => 0	);
+		$entity = entity_create('node', $values);
+	}
+	
+	$n = entity_metadata_wrapper('node', $entity);
+	$n->title->set($title);
+	
+	if (!empty($fields) && count($fields)) {
+		foreach ($fields as $k => $v) {
+			if (!empty($v)) { $n->$k->set($v); }
+		}
+	}
+	
+	if (!empty($dates) && count($dates)) {
+	  foreach ($dates as $k => $v) {
+		if (!empty($v) && strtotime($v)) { 
+		  $dat = new DateTime($v);
+		  $val = array( 'value' => date_format($dat, 'Y-m-d'), 'timezone' => 'UTC', 'timezone_db' => 'UTC' );	
+		  $entity->$k = array( 'und' => array( 0 => $val ) );				  
+		}
+	  }
+	}
+	
+	$n->save();
+	return $n->value();
+	
+} 
+
+/* [ENTITY] update
+** ----------------------------------------------------------------*/
+function _update_entity($edit = NULL, $type = 'article', $title = '', $data = array()) {
+
+	if (!empty($edit) && isset($edit->nid)) { $entity = $edit; }
+	else {
+		$values = array( 'type' => $type, 'uid' => 1, 'status' => 1, 'promote' => 0	);
+		$entity = entity_create('node', $values);
+	}
+	
+	$n = entity_metadata_wrapper('node', $entity);
+	$n->title->set($title);
+	
+	if (!empty($data) && count($data)) {
+		foreach ($data as $k => $v) {
+			if (!empty($v) && $key = 'field_'. $k) { $n->$key->set($v);	}
+		}
+	}
+	$n->save();
+	return $n->value();
+	
+}
+
+/* [TERM] create
+** ----------------------------------------------------------------*/
+function _create_term($name = '', $vid = 1, $desc = '', $parent_id = 0) {
+	$term = new stdClass();
+	$term->name = $name;
+	$term->vid = $vid;
+	$term->description = $desc;
+	$term->parent = array($parent_id);	
+	taxonomy_term_save($term);
+	return $term;
+}
+
+/* HELPER get url part
+** ----------------------------------------------------------------*/
+function _get( $index = 0 ) {
+	$parts = explode('/', $_GET['q']);
+	if ($index < 1 && !empty($parts[0])) { return $parts[0]; }
+	elseif (!empty($parts[$index])) { return $parts[$index]; }
+	else { return NULL; }
+}
+
+/* HELPER field default value (fdv)
+** ----------------------------------------------------------------*/
+function fdv( $val = NULL, $def = '' ) {
+	$def = ($def === NULL) ? '' : $def;
+    return ($val === NULL) ? $def : $val;
+}
+
+/* HELPER array info
+** ----------------------------------------------------------------*/
+function _arrayinfo($input = NULL) {
+	if ($input) { $show = check_plain(print_r($input, 2)); }
+	else { $show = t('Unable to show array information.'); }
+	return '<div class="arrayinfo"><pre>' . $show . '</pre></div>';
+}
+
+/* HELPER social networks
+** ----------------------------------------------------------------*/
+function _gc_list_social_networks() {
+	$ret = array( 
+		'twitter' => array( 'name' => t('Twitter'), 'title' => t('Follow us on Twitter') ), 
+		'facebook' => array( 'name' => t('Facebook'), 'title' => t('Follow us on Facebook') ), 
+		'linkedin' => array( 'name' => t('LinkedIn'), 'title' => t('Follow us on LinkedIn') ), 
+		'google' => array( 'name' => t('Google Plus'), 'title' => t('Follow us on Google Plus') ), 
+		'pinterest' => array( 'name' => t('Pinterest'), 'title' => t('Follow us on Pinterest') ), 
+	);
+	return $ret;
+}
+
+/* HOOK panels api
+** Implements hook_ctools_plugin_directory().
+** ----------------------------------------------------------------*/
+function gc_ctools_plugin_directory($owner, $plugin_type) {
+  // if ($owner == 'ctools' && $plugin_type == 'content_types') { return 'plugins/content_types'; }
+  // if ($module == "panels" && in_array($plugin, array('layouts', 'styles'))) { return "plugins/$plugin"; }
+  // if ($owner == 'ctools' && in_array($plugin_type, array('layouts', 'content_types'))) { return "plugins/$plugin_type"; }
+  if ($owner == 'ctools' && $plugin_type == 'content_types') { return 'plugins/content_types'; }
+  if ($owner == 'panels' && $plugin_type == 'layouts') { return 'plugins/layouts'; }
+}
+
+
+
+
+/* HOOK views api
+** ----------------------------------------------------------------*/
+/*
+function gc_views_api() {
+  return array(
+    'api' => 3.0,
+    'path' => drupal_get_path('module', 'gc') . '/views',
+  );
+}
+*/

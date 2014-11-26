@@ -1,0 +1,227 @@
+<?php
+
+/**
+ * Test cid for beta-testing
+ */
+define('EAN_API_TEST_CID', 55505);
+
+/**
+ * Implements hook_menu().
+ */
+function ean_api_menu() {
+  $items['admin/config/services/eanapi'] = array(
+    'title'            => 'EAN API',
+    'type'             => MENU_NORMAL_ITEM,
+    'page callback'    => 'drupal_get_form',
+    'page arguments'   => array('ean_api_config_form'),
+    'access arguments' => array('administer site configuration'),
+  );
+
+  return $items;
+}
+
+/**
+ *  Implements hook_theme().
+ */
+function ean_api_theme() {
+  return array(
+    'ean_api_hotel'     => array(
+      'variables' => array('hotel' => NULL),
+      'template'  => 'ean-api-hotel',
+    ),
+    'ean_api_item_list' => array(
+      'variables' => array('items' => NULL, 'location' => NULL, 'node' => NULL),
+      'template'  => 'ean-api-item-list',
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function ean_api_block_info() {
+  return array(
+    'hotels' => array(
+      'info'  => t('Hotels list'),
+      'cache' => DRUPAL_CACHE_PER_PAGE,
+    ),
+  );
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function ean_api_block_view($delta = '') {
+  $block = array();
+
+  if ($delta == 'hotels') {
+    $key = variable_get('ean_api_key');
+    $cid = variable_get('ean_api_cid', EAN_API_TEST_CID);
+    $fields = variable_get('ean_api_fields', array());
+
+    // At first, check if module was configured
+    if (!empty($key) && !empty($cid) && !empty($fields)) {
+
+      // As second, check if we on node page
+      if ((arg(0) == 'node' || arg(0) == 'currencies') && ($nid = intval(arg(1))) && !arg(2)) {
+        // (comment out if want to show on other pages) if ((arg(0) == 'node' || arg(0) == 'currencies' || arg(0) == 'some-new-slug') && ($nid = intval(arg(1))) && !arg(2)) {
+        $node = node_load($nid);
+
+        // We try to fetch location from one of configured fields. If node have this field, we used it's value as location.
+        foreach ($fields as $field_name) {
+          if (!empty($node->{$field_name}[LANGUAGE_NONE][0]['value'])) {
+            $location = $node->{$field_name}[LANGUAGE_NONE][0]['value'];
+
+            // API call
+            $data = ean_api_get_hotels($location);
+
+            // API returns json. Hotels list on third-level of array
+            if (!empty($data['HotelListResponse']['HotelList']['HotelSummary'])) {
+              $hotels = $data['HotelListResponse']['HotelList']['HotelSummary'];
+              $items = array();
+
+              // Limit for hotels list
+              if ($limit = variable_get('ean_api_limit', 20)) {
+                $hotels = array_slice($hotels, 0, $limit);
+              }
+
+              foreach ($hotels as $hotel) {
+                $output = theme('ean_api_hotel', array('hotel' => $hotel));
+                $items[] = render($output);
+              }
+
+              $block['content'] = theme('ean_api_item_list', array(
+                  'items'    => $items,
+                  'location' => $location,
+                  'node'     => $node,
+                )
+              );
+            }
+
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  return $block;
+}
+
+/**
+ * Display settings form, where admin can choose field contains location information,
+ * and set API secret and key
+ */
+function ean_api_config_form() {
+  $form = array();
+
+  $form['ean_api_key'] = array(
+    '#title'         => 'EAN API key',
+    '#type'          => 'textfield',
+    '#default_value' => variable_get('ean_api_key'),
+  );
+
+  $form['ean_api_cid'] = array(
+    '#title'         => 'EAN API CID',
+    '#type'          => 'textfield',
+    '#default_value' => variable_get('ean_api_cid', EAN_API_TEST_CID),
+  );
+
+  $form['ean_api_limit'] = array(
+    '#title'         => 'Limit hotels to display',
+    '#type'          => 'textfield',
+    '#default_value' => variable_get('ean_api_limit', 20),
+  );
+
+  $options = array();
+  $instances = field_info_instances('node');
+
+  foreach ($instances as $items) {
+    foreach ($items as $field_name => $field_info) {
+      $field = field_info_field($field_name);
+      if ($field['type'] == 'text' && $field['module'] == 'text') {
+        $options[$field_name] = $field_info['label'];
+      }
+    }
+  }
+
+  $form['ean_api_fields'] = array(
+    '#title'         => 'Fields with location information',
+    '#type'          => 'checkboxes',
+    '#options'       => $options,
+    '#default_value' => variable_get('ean_api_fields', array()),
+  );
+
+  $period = drupal_map_assoc(array(
+      CACHE_PERMANENT,
+      3600,
+      7200,
+      10800,
+      21600,
+      43200,
+      86400,
+      172800,
+      259200,
+      604800,
+      1209600,
+      2419200,
+      5184000,
+    ), 'format_interval'
+  );
+  $period[CACHE_PERMANENT] = 'Permanent';
+
+  $form['ean_api_cache'] = array(
+    '#title'         => 'API result cache lifetime',
+    '#type'          => 'select',
+    '#options'       => $period,
+    '#default_value' => variable_get('ean_api_fields', CACHE_PERMANENT),
+  );
+
+  return system_settings_form($form);
+}
+
+/**
+ * Get hotels list from cache or make request to API
+ */
+function ean_api_get_hotels($location) {
+  if ($cache = cache_get('ean:' . $location)) {
+    return $cache->data;
+  }
+
+  $data = array();
+
+  // List of params that send to API
+  // @see http://developer.ean.com/docs/hotel-list/
+
+  $requestParams = array(
+    'apiKey'            => variable_get('ean_api_key'),
+    'cid'               => variable_get('ean_api_cid', EAN_API_TEST_CID),
+    'minorRev'          => 28, // api version
+    'destinationString' => $location,
+  );
+
+  if ($requestParams['cid'] == EAN_API_TEST_CID) {
+    // It's testing call
+    $url = 'http://dev.api.ean.com/ean-services/rs/hotel/v3/list?' . drupal_http_build_query($requestParams);
+  }
+  else {
+    // It's production call
+    $url = 'http://api.ean.com/ean-services/rs/hotel/v3/list?' . drupal_http_build_query($requestParams);
+  }
+
+  $response = drupal_http_request($url);
+
+  if (empty($response->data)) {
+    return array();
+  }
+
+  $data = json_decode($response->data, TRUE);
+
+  if (empty($data['HotelListResponse'])) {
+    return array();
+  }
+
+  cache_set('ean:' . $location, $data, 'cache', variable_get('ean_api_cache', CACHE_PERMANENT));
+
+  return $data;
+}

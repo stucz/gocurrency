@@ -1,0 +1,6 @@
+name = Currency Tabs
+description = Displays currency data in tab format
+core = 7.x
+files[] = currency_tabs.module
+package = Custom
+

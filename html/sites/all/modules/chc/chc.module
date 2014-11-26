@@ -1,0 +1,146 @@
+<?php
+/**
+ * @file
+ * A block module that shows current currency data using highcharts
+ */
+
+/*  CACHE
+** ----------------------------------------------------------------*/
+function _get_chc($currency, $reset = 0) {
+
+	if ($reset == 1) { cache_clear_all('acct_' . $currency, 'cache'); }
+	if ($cache = cache_get( 'acct_' . $currency )) { return $cache->data; }
+
+	$data = array();
+	// MAKE YOUR DATA
+	
+	cache_set('acct_' . $currency, $data, 'cache', strtotime('+1 hour'));
+	return $data;
+	
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function chc_block_info() {
+  $blocks['chc'] = array(
+    // The name that will appear in the block list.
+    'info' => t('Current Exchange Rates Table'),
+    // Default setting.
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+  return $blocks;
+}
+
+/**
+ * chc content. 
+ * 
+ * Shows chart
+ * 
+ *   
+ */
+function chc_contents(){
+    $file = 'time-series.json';
+	$appId = '8c0ead44445346f4b3b5588270304af2';
+	$prettyprint = '1';
+
+	if($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+	    $start = $_POST['start'];
+	    $end = $_POST['end'];
+	    $base = $_POST['base'];
+	    $symbols = $_POST['symbol'];
+
+
+	$ch = curl_init("http://openexchangerates.org/api/{$file}?app_id={$appId}&start={$start}&end={$end}&base={$base}&symbols={$symbols}&prettyprint={$prettyprint}");
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+	$json = curl_exec($ch);
+	curl_close($ch);
+
+	print_r($json);
+	}
+}
+
+/**
+ * Implements hook_block_view().
+ * 
+ * Prepares the contents of the block.
+ */
+
+function chc_block_view($delta = '') {
+  switch ($delta) {
+    case 'chc':
+      $block['subject'] = t('Current Exchange Rates');
+      if (user_access('access content')) {
+      // Retrieve and process data here.
+      	// Requested file
+		// Could also be e.g. 'currencies.json' or 'historical/2011-01-01.json'
+		$file = 'latest.json';
+		$appId = '8c0ead44445346f4b3b5588270304af2';
+		$symbols = 'USD,GBP,JPY,EUR,CAD,AUD';
+
+		// Open CURL session:
+		$ch = curl_init("http://openexchangerates.org/api/{$file}?app_id={$appId}&symbols={$symbols}");
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+		// Get the data:
+		$json = curl_exec($ch);
+		curl_close($ch);
+
+		// Decode JSON response:
+		$exchangeRates = json_decode($json);
+		$aud = json_encode($exchangeRates->rates->AUD);
+		$usd = json_encode($exchangeRates->rates->USD);
+		$cad = json_encode($exchangeRates->rates->CAD);
+		$eur = json_encode($exchangeRates->rates->EUR);
+		$gbp = json_encode($exchangeRates->rates->GBP);
+		$jpy = json_encode($exchangeRates->rates->JPY);
+		//convert for AUD
+		$convertaud_aud = round($aud * (1 / $aud), 3);
+		$convertcad_aud = round($cad * (1 / $aud), 3);
+		$converteur_aud = round($eur * (1 / $aud), 3);
+		$convertgbp_aud = round($gbp * (1 / $aud), 3);
+		$convertjpy_aud = round($jpy * (1 / $aud), 3);
+		$convertusd_aud = round($usd * (1 / $aud), 3);
+		//convert for CAD
+		$convertaud_cad = round($aud * (1 / $cad), 3);
+		$convertcad_cad = round($cad * (1 / $cad), 3);
+		$converteur_cad = round($eur * (1 / $cad), 3);
+		$convertgbp_cad = round($gbp * (1 / $cad), 3);
+		$convertjpy_cad = round($jpy * (1 / $cad), 3);
+		$convertusd_cad = round($usd * (1 / $cad), 3);
+		//convert for EUR
+		$convertaud_eur = round($aud * (1 / $eur), 3);
+		$convertcad_eur = round($cad * (1 / $eur), 3);
+		$converteur_eur = round($eur * (1 / $eur), 3);
+		$convertgbp_eur = round($gbp * (1 / $eur), 3);
+		$convertjpy_eur = round($jpy * (1 / $eur), 3);
+		$convertusd_eur = round($usd * (1 / $eur), 3);
+		//convert for GBP
+		$convertaud_gbp = round($aud * (1 / $gbp), 3);
+		$convertcad_gbp = round($cad * (1 / $gbp), 3);
+		$converteur_gbp = round($eur * (1 / $gbp), 3);
+		$convertgbp_gbp = round($gbp * (1 / $gbp), 3);
+		$convertjpy_gbp = round($jpy * (1 / $gbp), 3);
+		$convertusd_gbp = round($usd * (1 / $gbp), 3);
+		//convert for JPY
+		$convertaud_jpy = round($aud * (1 / $jpy), 5);
+		$convertcad_jpy = round($cad * (1 / $jpy), 5);
+		$converteur_jpy = round($eur * (1 / $jpy), 5);
+		$convertgbp_jpy = round($gbp * (1 / $jpy), 5);
+		$convertjpy_jpy = round($jpy * (1 / $jpy), 5);
+		$convertusd_jpy = round($usd * (1 / $jpy), 5);
+		//convert/round for USD
+		$aud_round = round($aud, 3);
+		$cad_round = round($cad, 3);
+		$eur_round = round($eur, 3);
+		$gbp_round = round($gbp, 3);
+		$jpy_round = round($jpy, 3);
+
+		 // Pass data through theme function.
+          $block['content'] = t('<table class="table"><tr><td></td><td>AUD</td><td>CAD</td><td>EUR</td><td>GBP</td><td>JPY</td><td>USD</td><tr><td>1 AUD=</td><td>'.$convertaud_aud.'</td><td>'.$convertcad_aud.'</td><td>'.$converteur_aud.'</td><td>'.$convertgbp_aud.'</td><td>'.$convertjpy_aud.'</td><td>'.$convertusd_aud.'</td></tr><tr><td>1 CAD=</td><td>'.$convertaud_cad.'</td><td>'.$convertcad_cad.'</td><td>'.$converteur_cad.'</td><td>'.$convertgbp_cad.'</td><td>'.$convertjpy_cad.'</td><td>'.$convertusd_cad.'</td></tr><tr><td>1 EUR=</td><td>'.$convertaud_eur.'</td><td>'.$convertcad_eur.'</td><td>'.$converteur_eur.'</td><td>'.$convertgbp_eur.'</td><td>'.$convertjpy_eur.'</td><td>'.$convertusd_eur.'</td></tr><tr><td>1 GPB=</td><td>'.$convertaud_gbp.'</td><td>'.$convertcad_gbp.'</td><td>'.$converteur_gbp.'</td><td>'.$convertgbp_gbp.'</td><td>'.$convertjpy_gbp.'</td><td>'.$convertusd_gbp.'</td></tr><tr><td>1 JPY=</td><td>'.$convertaud_jpy.'</td><td>'.$convertcad_jpy.'</td><td>'.$converteur_jpy.'</td><td>'.$convertgbp_jpy.'</td><td>'.$convertjpy_jpy.'</td><td>'.$convertusd_jpy.'</td></tr><tr><td>1 USD=</td><td>'.$aud_round.'</td><td>'.$cad_round.'</td><td>'.$eur_round.'</td><td>'.$gbp_round.'</td><td>'.$jpy_round.'</td><td>'.json_encode($exchangeRates->rates->USD).'</td></tr></table>');
+      }
+      return $block;
+    }
+  }

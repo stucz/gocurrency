@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   viewBox="0 0 45 30"
+   id="svg3226"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Flag_of_Puerto_Rico.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <metadata
+     id="metadata3256">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3254">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 300 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="900 : 300 : 1"
+       inkscape:persp3d-origin="450 : 200 : 1"
+       id="perspective3258" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:window-height="676"
+     inkscape:window-width="937"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="0.62111111"
+     inkscape:cx="450"
+     inkscape:cy="300"
+     inkscape:window-x="23"
+     inkscape:window-y="177"
+     inkscape:current-layer="svg3226" />
+  <clipPath
+     id="a">
+    <rect
+       width="45"
+       height="30"
+       id="rect3229"
+       x="0"
+       y="0" />
+  </clipPath>
+  <rect
+     id="red_stripes"
+     width="45"
+     height="30"
+     x="0"
+     y="0"
+     style="fill:#ed0000" />
+  <path
+     id="white_stripes"
+     d="M 0,9 L 45,9 M 0,21 L 45,21"
+     style="stroke:#ffffff;stroke-width:6" />
+  <g
+     id="blue_triangle"
+     style="fill:#0050f0">
+    <path
+       d="M 0,0 L 30,0 L 0,20"
+       transform="matrix(0.8660254,0.5,-0.5,0.8660254,0,0)"
+       id="path3234" />
+    <path
+       d="M 0,30 L 30,30 L 0,10"
+       transform="matrix(0.8660254,-0.5,0.5,0.8660254,-15,4.0192379)"
+       id="path3236" />
+  </g>
+  <comment
+     id="comment3238">the star is in the center of gravity of the triangle, so the x-pos is irrational (tan(30 deg) * 15)</comment>
+  <g
+     id="star"
+     transform="matrix(5,0,0,5,8.660254,15)"
+     style="fill:#ffffff">
+    <g
+       id="cone">
+      <polygon
+         id="triangle"
+         points="0,0 0,1 0.5,1 0,0 "
+         transform="matrix(0.9510565,0.309017,-0.309017,0.9510565,0,-1)" />
+      <use
+         xlink:href="#triangle"
+         transform="scale(-1,1)"
+         id="use3243"
+         x="0"
+         y="0"
+         width="45"
+         height="30" />
+    </g>
+    <use
+       xlink:href="#cone"
+       transform="matrix(0.309017,0.9510565,-0.9510565,0.309017,0,0)"
+       id="use3245"
+       x="0"
+       y="0"
+       width="45"
+       height="30" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(0.309017,-0.9510565,0.9510565,0.309017,0,0)"
+       id="use3247"
+       x="0"
+       y="0"
+       width="45"
+       height="30" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(-0.809017,0.5877853,-0.5877853,-0.809017,0,0)"
+       id="use3249"
+       x="0"
+       y="0"
+       width="45"
+       height="30" />
+    <use
+       xlink:href="#cone"
+       transform="matrix(-0.809017,-0.5877853,0.5877853,-0.809017,0,0)"
+       id="use3251"
+       x="0"
+       y="0"
+       width="45"
+       height="30" />
+  </g>
+</svg>

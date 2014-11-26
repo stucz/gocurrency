@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0"
+   width="1540"
+   height="880"
+   id="svg2383">
+  <defs
+     id="defs2385">
+    <path
+       d="M 0,0 L 1,0 L 1,-2 L 4,-2 L 4,0 L 9,0 L 9,-3 L 6,-3 L 6,-2 L 8,-2 L 8,-1 L 5,-1 L 5,-3 L 0,-3 L 0,0 z M 2,0 L 3,0 L 3,-1 L 2,-1 L 2,0 z M 0,-4 L 13,-4 L 13,-5 L 0,-5 L 0,-4 z M 13,0 L 10,0 L 10,-3 L 14,-3 L 14,-5 L 15,-5 L 15,-1 L 16,-1 L 16,-5 L 17,-5 L 17,-1 L 18,-1 L 18,-5 L 19,-5 L 19,0 L 14,0 L 14,-2 L 11,-2 L 11,-1 L 13,-1 L 13,0 z"
+       transform="translate(-9.5,0)"
+       id="Allahu_Akbar"
+       style="fill:#ffffff" />
+    <path
+       d="M 0,0 L 9,0 L 9,-2 L 0,-2 L 0,0 z M 10,0 L 19,0 L 19,-2 L 10,-2 L 10,0 z"
+       transform="translate(-9.5,0)"
+       id="lines"
+       style="fill:#ffffff" />
+  </defs>
+  <rect
+     width="1540"
+     height="880"
+     x="0"
+     y="0"
+     id="rect2389"
+     style="fill:#ffffff" />
+  <rect
+     width="1540"
+     height="294"
+     x="0"
+     y="0"
+     id="rect2391"
+     style="fill:#239f40" />
+  <rect
+     width="1540"
+     height="294"
+     x="0"
+     y="586"
+     id="rect2395"
+     style="fill:#da0000" />
+  <path
+     d="M 770,347.55229 L 756.32558,358.66275 L 758.88953,536.4302 L 770,549.24997 L 781.11047,536.4302 L 783.67442,358.66275 L 770,347.55229 z"
+     id="path2399"
+     style="fill:#da0000" />
+  <path
+     d="M 797.34884,328.74996 C 794.5688,333.25941 790.01544,336.38687 784.80865,337.36314 C 779.60186,338.33941 774.22482,337.07391 770,333.87787 C 765.77518,337.07391 760.39814,338.33941 755.19135,337.36314 C 749.98456,336.38687 745.4312,333.25941 742.65116,328.74996 C 740.81992,335.87406 744.00618,343.33936 750.41722,346.94557 C 756.82826,350.55178 764.8627,349.39812 770,344.13368 C 775.1373,349.39812 783.17174,350.55178 789.58278,346.94557 C 795.99382,343.33936 799.18008,335.87406 797.34884,328.74996"
+     id="path2401"
+     style="fill:#da0000" />
+  <path
+     d="M 804.18605,353.53484 C 830.3401,389.19121 832.85971,436.96266 810.60159,475.17243 C 788.34346,513.38221 745.54559,534.75511 701.6279,529.59299 C 749.02959,548.55516 803.16847,529.92675 828.86633,485.81208 C 854.56419,441.69742 844.06294,385.41457 804.18605,353.53484"
+     id="path2403"
+     style="fill:#da0000" />
+  <path
+     d="M 735.81395,353.53484 C 709.6599,389.19121 707.14029,436.96266 729.39841,475.17243 C 751.65654,513.38221 794.45441,534.75511 838.3721,529.59299 C 790.97041,548.55516 736.83153,529.92675 711.13367,485.81208 C 685.43581,441.69742 695.93706,385.41457 735.81395,353.53484"
+     id="path2405"
+     style="fill:#da0000" />
+  <path
+     d="M 817.00582,350.11624 C 842.12137,368.38577 858.44361,396.33362 862.01588,427.18497 C 865.58813,458.03632 856.08428,488.97456 835.80814,512.49997 C 867.47158,495.37689 885.51945,460.70086 881.37906,424.94292 C 877.23867,389.18497 851.74434,359.55067 817.00582,350.11624"
+     id="path2407"
+     style="fill:#da0000" />
+  <path
+     d="M 722.99418,350.11624 C 697.87863,368.38577 681.55639,396.33362 677.98412,427.18497 C 674.41187,458.03632 683.91572,488.97456 704.19186,512.49997 C 672.52842,495.37689 654.48055,460.70086 658.62094,424.94292 C 662.76133,389.18497 688.25566,359.55067 722.99418,350.11624"
+     id="path2409"
+     style="fill:#da0000" />
+  <use
+     transform="matrix(7,0,0,7,70,280)"
+     id="use2412"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,210,280)"
+     id="use2414"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,350,280)"
+     id="use2416"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,490,280)"
+     id="use2418"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,630,280)"
+     id="use2420"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,770,280)"
+     id="use2422"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,910,280)"
+     id="use2424"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,1050,280)"
+     id="use2426"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,1190,280)"
+     id="use2428"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,1330,280)"
+     id="use2430"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,1470,280)"
+     id="use2432"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,70,301)"
+     id="use2435"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,210,301)"
+     id="use2437"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,350,301)"
+     id="use2439"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,490,301)"
+     id="use2441"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,630,301)"
+     id="use2443"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,770,301)"
+     id="use2445"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,910,301)"
+     id="use2447"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,1050,301)"
+     id="use2449"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,1190,301)"
+     id="use2451"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,1330,301)"
+     id="use2453"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,1470,301)"
+     id="use2455"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,70,635)"
+     id="use2579"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,210,635)"
+     id="use2581"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,350,635)"
+     id="use2583"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,490,635)"
+     id="use2585"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,630,635)"
+     id="use2587"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,770,635)"
+     id="use2589"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,910,635)"
+     id="use2591"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,1050,635)"
+     id="use2593"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,1190,635)"
+     id="use2595"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,1330,635)"
+     id="use2597"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,1470,635)"
+     id="use2599"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#Allahu_Akbar" />
+  <use
+     transform="matrix(7,0,0,7,70,593)"
+     id="use2544"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,210,593)"
+     id="use2546"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,350,593)"
+     id="use2548"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,490,593)"
+     id="use2550"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,630,593)"
+     id="use2552"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,770,593)"
+     id="use2554"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,910,593)"
+     id="use2556"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,1050,593)"
+     id="use2558"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,1190,593)"
+     id="use2560"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,1330,593)"
+     id="use2562"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+  <use
+     transform="matrix(7,0,0,7,1470,593)"
+     id="use2564"
+     x="0"
+     y="0"
+     width="1540"
+     height="880"
+     xlink:href="#lines" />
+</svg>
